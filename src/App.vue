@@ -1,6 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Page de réservation</h1>
+  </div>
+  <HelloWorld :propertyId="propertyId"/>
 </template>
 
 <script>
@@ -10,6 +12,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+      propertyId: "72410" // Remplacez par l'ID de la propriété appropriée
+    };
   }
 }
 </script>
