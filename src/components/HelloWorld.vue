@@ -1,10 +1,6 @@
 <template>
-  <div id="guestready-booking-widget__root"
-       :data-rental="propertyId"
-       data-locale="fr"
-       data-reservation-platform-id="132"
-       data-base-url="https://openflats.rentalready.io"
-  >
+  <div class="hello">
+
   </div>
 </template>
 
@@ -12,10 +8,7 @@
 export default {
   name: 'HelloWorld',
   props: {
-    propertyId: {
-      type: String,
-      required: true
-    }
+    msg: String
   }
 }
 </script>
@@ -25,17 +18,14 @@ export default {
 h3 {
   margin: 40px 0 0;
 }
-
 ul {
   list-style-type: none;
   padding: 0;
 }
-
 li {
   display: inline-block;
   margin: 0 10px;
 }
-
 a {
   color: #42b983;
 }
