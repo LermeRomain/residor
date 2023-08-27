@@ -1,4 +1,12 @@
 <template>
+  <div>
+    <h1>Liste des Logements</h1>
+    <ul>
+      <li v-for="logement in logements" :key="logement.id">
+        {{ logement.titre }} - {{ logement.description }}
+      </li>
+    </ul>
+  </div>
   <div id="guestready-booking-widget__root"
        data-rental="72410"
        data-locale="fr"
@@ -9,24 +17,35 @@
 </template>
 
 <script>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+import axios from 'axios';
 
 export default {
   name: 'HelloWorld',
-    setup() {
-      onMounted(() => {
+  setup() {
+    const logements = ref([]);
+
+    onMounted(async () => {
+      try {
+        const response = await axios.get('http://127.0.0.1:8000/api/logements');
+        logements.value = response.data['hydra:member'];
+
         const script = document.createElement('script');
         script.src = 'https://book.guestready.com/booking_widget/main.js';
         script.async = true;
         document.head.appendChild(script);
-      });
+      } catch (error) {
+        console.error('Erreur lors de la récupération des logements', error);
+      }
+    });
 
-      return {}; // Assurez-vous de renvoyer un objet ou des valeurs si nécessaire
-    }
+    return {
+      logements,
+    };
   }
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
