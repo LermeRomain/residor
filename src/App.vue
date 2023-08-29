@@ -37,15 +37,22 @@
   </div>
   <Search/>
   <Sejour/>
+  <Type/>
+  <Zone/>
 </template>
 
 <script>
 
 import Search from "@/components/Search";
 import Sejour from "@/components/Sejour";
+import Type from "@/components/Type";
+import Zone from "@/components/Zone";
+
 export default {
   name: 'App',
   components: {
+    Zone,
+    Type,
     Sejour,
     Search
   }

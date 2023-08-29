@@ -12,6 +12,7 @@
       <li v-for="logement in logements" :key="logement.id">
         <h2>{{ logement.titre }}</h2>
         <p>{{ logement.description }}</p>
+        <p>{{ logement.rating }}</p>
       </li>
     </ul>
   </div>
