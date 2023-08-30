@@ -56,6 +56,12 @@ export default {
 </script>
 
 <style scoped>
+
+section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .title {
   font-size: 60px;
   font-weight: 600;

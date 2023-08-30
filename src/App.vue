@@ -39,6 +39,9 @@
   <Sejour/>
   <Type/>
   <Zone/>
+  <Satisfaction/>
+  <Avis/>
+  <Footer/>
 </template>
 
 <script>
@@ -47,10 +50,16 @@ import Search from "@/components/Search";
 import Sejour from "@/components/Sejour";
 import Type from "@/components/Type";
 import Zone from "@/components/Zone";
+import Satisfaction from "@/components/Satisfaction";
+import Avis from "@/components/Avis";
+import Footer from "@/components/Footer";
 
 export default {
   name: 'App',
   components: {
+    Footer,
+    Avis,
+    Satisfaction,
     Zone,
     Type,
     Sejour,
@@ -109,6 +118,10 @@ export default {
   font-weight: bold;
   border-color: #FC9063;
   margin: 1rem;
+}
+
+body{
+  background-color: #f8f9fa!important;
 }
 
 

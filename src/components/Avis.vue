@@ -2,24 +2,37 @@
   <section class="section bg-light text-white py-5">
     <div class="container-fluid">
       <div class="container-fluid col-md-10">
-        <h1 class="title text-dark">Destinations populaires</h1>
-        <p class="subtitle text-dark">Nous proposons des séjours de qualité à nos voyageurs dans plus de 7 pays à travers le monde.</p>
+        <h1 class="title text-dark">Ce que nos voyageurs disent</h1>
+        <p class="subtitle text-dark">Chez Residor, nous faisons tout pour rendre chaque séjour agréable</p>
       </div>
       <Carousel :itemsToShow="itemsToShow" :wrapAround="true" :transition="500">
-        <Slide v-for="slide in 6" :key="slide">
-          <div class="carousel__item">
-            <div class="card text-bg-dark">
-              <div class="image-container">
-                <img
-                    src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
-                    class="card-img" alt="...">
-                <div class="zoom-overlay">
-                  <span class="zoom-text">T{{ slide }}</span>
+          <Slide v-for="slide in 6" :key="slide">
+            <div class="carousel__item">
+              <div class="card text-bg-dark">
+                <div class="image-container">
+                  <img
+                      src="https://book.guestready.com/_next/image?url=%2Fassets%2Fimages%2Freviews%2Fr2.jpg&w=828&q=75"
+                      class="card-img" alt="...">
+                  <div class="zoom-overlay">
+                    <span class="zoom-text">T{{ slide }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Icônes d'étoiles et texte -->
+              <div class="d-flex align-items-center mt-3">
+                <div class="stars">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+                <div class="ml-2">
+                  <p class="text-muted mb-0">Signé par <strong>{{ reviewerName }}</strong>, le {{ reviewDate }}</p>
                 </div>
               </div>
             </div>
-          </div>
-        </Slide>
+          </Slide>
       </Carousel>
     </div>
   </section>
@@ -32,7 +45,7 @@ import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Zone',
+  name: 'Avis',
   components: {
     Carousel,
     Slide,
@@ -40,6 +53,8 @@ export default defineComponent({
   data() {
     return {
       itemsToShow: this.calculateItemsToShow(),
+      reviewerName: "John Doe",
+      reviewDate: "30 août 2023",
     }
   },
   methods: {
@@ -127,9 +142,18 @@ h4 {
   margin: 0 1rem; /* Ajoutez la marge horizontale souhaitée ici */
 }
 
+.stars {
+  font-size: 20px;
+  color: #FFD700; /* Couleur d'étoile */
+}
+
+.star {
+  margin-right: 5px;
+}
+
 /* Styles spécifiques aux écrans mobiles */
 @media (max-width: 767px) {
-
+  /* Vos styles spécifiques aux mobiles */
   .carousel__item {
     margin: 0 0.5rem; /* Ajustez la marge pour les mobiles */
   }
