@@ -6,30 +6,30 @@
         <img
             src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
             class="card-img" alt="..." style="object-fit: cover;">
-      </div>
-      <div class="card-footer text-body-secondary bg-white">
-        <form class="row align-items-center justify-content-center">
-          <div class="col-md-4 col-sm-6 mb-2">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
+        <div class="card-footer text-body-secondary bg-white">
+          <form class="row align-items-center justify-content-center">
+            <div class="col-md-4 col-sm-6 mb-2">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Destination">
               </div>
-              <input type="text" class="form-control" placeholder="Destination">
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-2 d-flex justify-content-around align-items-center">
-            <button type="button" class="btn btn-secondary transparent-btn">
-              <i class="fas fa-calendar mr-2"></i> Arrivée
-              <i class="fas fa-arrow-right mr-2 ml-2"></i> Départ
-            </button>
-          </div>
-          <div class="col-md-2 col-sm-12 mb-2">
-            <button type="button" class="btn btn-primary btn-block transparent-btn">Voyageurs</button>
-          </div>
-          <div class="col-md-2 col-sm-12 mb-2">
-            <button class="btn btn-primary btn-block">Rechercher</button>
-          </div>
-        </form>
+            <div class="col-md-4 col-sm-12 mb-2 d-flex justify-content-around align-items-center">
+              <button type="button" class="btn btn-secondary transparent-btn">
+                <i class="fas fa-calendar mr-2"></i> Arrivée
+                <i class="fas fa-arrow-right mr-2 ml-2"></i> Départ
+              </button>
+            </div>
+            <div class="col-md-2 col-sm-12 mb-2">
+              <button type="button" class="btn btn-primary btn-block transparent-btn">Voyageurs</button>
+            </div>
+            <div class="col-md-2 col-sm-12 mb-2">
+              <button class="btn btn-primary btn-block">Rechercher</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -52,22 +52,28 @@ export default {
   background-color: rgba(246, 143, 120, 1);
   animation: 0.5s ease-in-out 0s 1 normal none running animation-bd47v2;
   right: 20px;
-  bottom: 20px;
+  bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.card{
+.card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre */
+  border-radius: 25px;
+}
+
+.card-footer {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre */
+  border-radius: 25px;
 }
 
 .card-img {
   height: 572px;
   object-fit: cover;
-
 }
 
 .transparent-btn {

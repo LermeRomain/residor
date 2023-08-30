@@ -56,6 +56,7 @@ h4 {
   background-color: #FC9063;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  border-radius: 25px;
 }
 
 section {

@@ -101,6 +101,7 @@ export default {
 
 .card {
   border: none;
+  border-radius: 25px;
 }
 
 .custom-card-width {

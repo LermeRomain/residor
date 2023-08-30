@@ -80,6 +80,7 @@ h4 {
   background-color: #f6692c;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  border-radius: 25px;
 }
 
 .section {
