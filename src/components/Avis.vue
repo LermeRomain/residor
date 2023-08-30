@@ -158,4 +158,8 @@ h4 {
     margin: 0 0.5rem; /* Ajustez la marge pour les mobiles */
   }
 }
+
+section{
+  margin-bottom: 2rem;
+}
 </style>

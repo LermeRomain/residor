@@ -58,8 +58,7 @@ h4 {
   padding-bottom: 3rem;
 }
 
-.container-fluid {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+section {
+  margin-bottom: 2rem;
 }
 </style>

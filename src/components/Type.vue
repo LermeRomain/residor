@@ -57,9 +57,8 @@ export default {
 
 <style scoped>
 
-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+section{
+  margin-bottom: 2rem;
 }
 
 .title {

@@ -96,6 +96,7 @@ export default {
 
 .sejour {
   background-color: #FC9063;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -105,4 +106,5 @@ export default {
 .custom-card-width {
   width: 100%;
 }
+
 </style>

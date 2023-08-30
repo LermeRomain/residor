@@ -84,6 +84,5 @@ h4 {
 
 .section {
   background-color: #FC9063;
-  margin-top: 10rem;
 }
 </style>
