@@ -11,9 +11,8 @@
           <!-- Colonne de texte -->
           <div class="col-md-8">
             <h1 class="title text-dark">475 000+ voyageurs satisfaits</h1>
-            <p class="subtitle text-dark">Avec une grande sélection de locations <br>à court terme à travers l'Europe et
-              le
-              Moyen-Orient, <br>il n'est pas étonnant que nos voyageurs <br>reviennent toujours.</p>
+            <p class="subtitle text-dark">Avec une grande sélection de locations <br>à court terme et long terme à travers tout Paris,
+              <br>il n'est pas étonnant que nos voyageurs <br>reviennent toujours.</p>
             <button class="btn btn-outline-success custom-btn">En savoir plus sur Residor</button>
           </div>
         </div>
