@@ -36,7 +36,8 @@
     </nav>
   </div>
   <Search/>
-  <Sejour/>
+<!--  <Sejour/>-->
+  <Sejourtest/>
   <Type/>
   <Zone/>
   <Satisfaction/>
@@ -47,22 +48,24 @@
 <script>
 
 import Search from "@/components/Search";
-import Sejour from "@/components/Sejour";
+/*import Sejour from "@/components/Sejour";*/
 import Type from "@/components/Type";
 import Zone from "@/components/Zone";
 import Satisfaction from "@/components/Satisfaction";
 import Avis from "@/components/Avis";
 import Footer from "@/components/Footer";
+import Sejourtest from "@/components/Sejourtest";
 
 export default {
   name: 'App',
   components: {
+    Sejourtest,
     Footer,
     Avis,
     Satisfaction,
     Zone,
     Type,
-    Sejour,
+/*    Sejour,*/
     Search
   }
 }

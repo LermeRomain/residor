@@ -5,7 +5,7 @@
         <div class="card-body d-md-flex">
           <div class="col-md-3">
             <a class="navbar-brand" href="#">
-              <span class="residor-logo">Résidor</span>
+              <span class="residor-logo">résidor</span>
             </a>
             <p>Nous offrons aux voyageurs un séjour confortable et aidons les hôtes à gérer leurs propriétés dans le
               respect des standards professionnels.</p>
