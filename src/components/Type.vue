@@ -11,7 +11,7 @@
           <div class="card text-bg-dark">
             <div class="image-container">
               <img
-                  src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
+                  src="https://book.guestready.com/_next/image?url=%2Fassets%2Fimages%2FpropertyTypes%2Fstudio.jpg&w=2048&q=75"
                   class="card-img" alt="...">
               <div class="zoom-overlay">
                 <span class="zoom-text">T1</span>
@@ -23,7 +23,7 @@
           <div class="card text-bg-dark">
             <div class="image-container">
               <img
-                  src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
+                  src="https://book.guestready.com/_next/image?url=%2Fassets%2Fimages%2FpropertyTypes%2Fapartment.jpg&w=2048&q=75"
                   class="card-img" alt="...">
               <div class="zoom-overlay">
                 <span class="zoom-text">T2</span>
@@ -35,7 +35,7 @@
           <div class="card text-bg-dark">
             <div class="image-container">
               <img
-                  src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
+                  src="https://book.guestready.com/_next/image?url=%2Fassets%2Fimages%2FpropertyTypes%2Fhouse.jpg&w=2048&q=75"
                   class="card-img" alt="...">
               <div class="zoom-overlay">
                 <span class="zoom-text">T3</span>

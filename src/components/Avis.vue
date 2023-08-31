@@ -11,7 +11,7 @@
               <div class="card text-bg-dark">
                 <div class="image-container">
                   <img
-                      src="https://book.guestready.com/_next/image?url=%2Fassets%2Fimages%2Freviews%2Fr2.jpg&w=828&q=75"
+                      :src="images[slide]"
                       class="card-img" alt="...">
                 </div>
               </div>
@@ -25,7 +25,7 @@
                   <span class="star">&#9733;</span>
                 </div>
                 <div class="ml-2">
-                  <p class="text-muted mb-0">Signé par <strong>{{ reviewerName }}</strong>, le {{ reviewDate }}</p>
+                  <p class="text-muted mb-0">Signé par <strong>{{ reviewerName[slide] }}</strong>, le {{ reviewDate[slide] }}</p>
                 </div>
               </div>
             </div>
@@ -50,8 +50,33 @@ export default defineComponent({
   data() {
     return {
       itemsToShow: this.calculateItemsToShow(),
-      reviewerName: "John Doe",
-      reviewDate: "30 août 2023",
+      reviewerName: [
+        "",
+        "Romain Lerme",
+        "Fanny Cassagne",
+        "Patrick Chirac",
+        "Lu Tissier",
+        "Anais Evard",
+        "Pierre-Nicolas Bacquet",
+      ],
+      reviewDate: [
+        "",
+        "30 Aout 2023",
+        "2 Septembre 2022",
+        "7 Janvier 2023",
+        "16 Février 2023",
+        "23 Décembre 2022",
+        "12 Mai 2023",
+      ],
+      images: [
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/3c4f133e-f948-48a4-b904-61589a456800/square1000",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/0ad3e80b-76b8-4631-a8fb-17a1354f7400/square1000",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/b44ab842-bebe-4815-44ff-ec70c8d8e900/square1000",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/6810d13a-ead2-445c-6e02-5d2afbd95d00/square1000",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/71f0ab14-53c7-4170-3970-73afa9693d00/square1000",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/b44ab842-bebe-4815-44ff-ec70c8d8e900/square1000",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/6810d13a-ead2-445c-6e02-5d2afbd95d00/square1000",
+      ],
     }
   },
   methods: {

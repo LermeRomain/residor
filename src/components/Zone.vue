@@ -3,7 +3,8 @@
     <div class="container-fluid">
       <div class="container-fluid col-md-10">
         <h1 class="title text-dark">Destinations populaires</h1>
-        <p class="subtitle text-dark">Nous proposons des séjours de qualité à nos voyageurs dans plus de 7 pays à travers le monde.</p>
+        <p class="subtitle text-dark">Nous proposons des séjours de qualité à nos voyageurs dans les arrondissements de
+          paris</p>
       </div>
       <Carousel :itemsToShow="itemsToShow" :wrapAround="true" :transition="500">
         <Slide v-for="slide in 6" :key="slide">
@@ -11,10 +12,10 @@
             <div class="card text-bg-dark">
               <div class="image-container">
                 <img
-                    src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
+                    :src="images[slide]"
                     class="card-img" alt="...">
                 <div class="zoom-overlay">
-                  <span class="zoom-text">T{{ slide }}</span>
+                  <span class="zoom-text">Arrondissement n°{{ slide }}</span>
                 </div>
               </div>
             </div>
@@ -26,8 +27,8 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-import { Carousel, Slide } from 'vue3-carousel'
+import {defineComponent} from 'vue'
+import {Carousel, Slide} from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({
@@ -40,14 +41,23 @@ export default defineComponent({
   data() {
     return {
       itemsToShow: this.calculateItemsToShow(),
+      images: [
+        "",
+        "https://www.frenchtouchproperties.com/wp-content/uploads/2020/09/pexels-shvets-anna-2574636-1536x1024.jpg",
+        "https://www.u-paris2.fr/sites/default/files/photo_image/2016_pantheon_facade.jpg",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/25/19/5f/3eme-arrondissement.jpg?w=1200&h=-1&s=1",
+        "https://www.sunlocation.com/images/zones/112/paris-4-place-bastille.jpg",
+        "https://www.sunlocation.com/images/zones/112/paris-5-panteon-sorbonne.jpg",
+        "https://imagedelivery.net/EiO3lIGpRo242B2Q4qZMkg/71f0ab14-53c7-4170-3970-73afa9693d00/square1000",
+      ],
     }
   },
   methods: {
     calculateItemsToShow() {
       const breakpoints = [
-        { width: 767, items: 1.2 },  // Petit écran (par exemple, mobile)
-        { width: 1023, items: 2.2 }, // Écran moyen (par exemple, tablette)
-        { width: Infinity, items: 3.3 }, // Grand écran (par exemple, ordinateur)
+        {width: 767, items: 1.2},  // Petit écran (par exemple, mobile)
+        {width: 1023, items: 2.2}, // Écran moyen (par exemple, tablette)
+        {width: Infinity, items: 3.3}, // Grand écran (par exemple, ordinateur)
       ];
 
       const screenWidth = window.innerWidth;
@@ -101,6 +111,7 @@ h4 {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .zoom-overlay {
@@ -120,7 +131,7 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   height: 2rem;
-  width: 4rem;
+  width: 13rem;
 }
 
 .carousel__item {
@@ -135,7 +146,7 @@ h4 {
   }
 }
 
-section{
+section {
   margin-bottom: 2rem;
 }
 </style>
