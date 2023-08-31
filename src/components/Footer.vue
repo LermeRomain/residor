@@ -7,8 +7,11 @@
             <a class="navbar-brand" href="#">
               <span class="residor-logo">Résidor</span>
             </a>
-            <p>Nous offrons aux voyageurs un séjour confortable et aidons les hôtes à gérer leurs propriétés dans le respect des standards professionnels.</p>
-            <button type="button" class="btn btn-outline-light">Nous contacter</button>
+            <p>Nous offrons aux voyageurs un séjour confortable et aidons les hôtes à gérer leurs propriétés dans le
+              respect des standards professionnels.</p>
+            <a href="mailto:hello@residor-paris.com">
+              <button class="btn btn-outline-success custom-btn" type="submit">Nous contacter</button>
+            </a>
           </div>
           <div class="col-md-9">
             <div class="row justify-content-end">
@@ -36,12 +39,12 @@
           </div>
         </div>
         <div class="card-footer text-muted d-flex justify-content-between">
-          <div class="text-white">© 2023 GuestReady Group. Tous droits réservés.</div>
+          <div class="text-white d-none d-md-block">© 2023 Altius Group. Tous droits réservés.</div>
           <div>
-            <span class="fab fa-instagram fa-3x text-white mx-2"></span>
-            <span class="fab fa-facebook fa-3x text-white mx-2"></span>
-            <span class="fab fa-twitter fa-3x text-white mx-2"></span>
-            <span class="fab fa-linkedin fa-3x text-white mx-2"></span>
+            <a href="https://www.instagram.com/residorparis/"><span
+                class="fab fa-instagram fa-3x text-white mx-3"></span></a>
+            <a href="https://www.facebook.com/profile.php?id=100095601399409"><span class="fab fa-facebook fa-3x text-white mx-3"></span></a>
+            <a href="https://www.tiktok.com/@residor2024?lang=fr"><span class="fab fa-tiktok fa-3x text-white mx-3"></span></a>
           </div>
         </div>
       </div>
@@ -64,6 +67,10 @@ export default {
   color: white;
 }
 
+.residor-logo:hover {
+  color: white;
+}
+
 h3 {
   font-size: 24px;
   font-weight: 700;
@@ -79,11 +86,33 @@ h4 {
   border: none;
   background-color: #f6692c;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  border-radius: 25px;
+}
+
+.card-footer {
+  border: none;
+  background-color: #f6692c;
   border-radius: 25px;
 }
 
 .section {
   background-color: #FC9063;
+}
+
+.custom-btn {
+  color: white;
+  border-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: white;
+  color: #FC9063;
+}
+
+li{
+  font-family: poppin,cursive;
 }
 </style>

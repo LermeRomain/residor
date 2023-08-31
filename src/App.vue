@@ -124,5 +124,9 @@ body{
   background-color: #f8f9fa!important;
 }
 
+p{
+  font-family: poppin,cursive;
+}
+
 
 </style>

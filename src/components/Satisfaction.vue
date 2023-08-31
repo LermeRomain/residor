@@ -14,7 +14,7 @@
             <p class="subtitle text-dark">Avec une grande sélection de locations <br>à court terme à travers l'Europe et
               le
               Moyen-Orient, <br>il n'est pas étonnant que nos voyageurs <br>reviennent toujours.</p>
-            <button type="button" class="btn btn-outline-light btn-lg">En savoir plus sur Residor</button>
+            <button class="btn btn-outline-success custom-btn">En savoir plus sur Residor</button>
           </div>
         </div>
       </div>
@@ -61,5 +61,18 @@ h4 {
 
 section {
   margin-bottom: 2rem;
+}
+
+.custom-btn {
+  color: white;
+  border-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: white;
+  color: #FC9063;
 }
 </style>

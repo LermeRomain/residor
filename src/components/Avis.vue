@@ -13,9 +13,6 @@
                   <img
                       src="https://book.guestready.com/_next/image?url=%2Fassets%2Fimages%2Freviews%2Fr2.jpg&w=828&q=75"
                       class="card-img" alt="...">
-                  <div class="zoom-overlay">
-                    <span class="zoom-text">T{{ slide }}</span>
-                  </div>
                 </div>
               </div>
               <!-- Icônes d'étoiles et texte -->
