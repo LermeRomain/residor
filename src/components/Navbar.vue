@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <span class="residor-logo">Résidor</span>
+        <span class="residor-logo">Votre logement vaut de l’or</span>
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03" bis_skin_checked="1">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -50,7 +50,7 @@ export default {
 
 .custom-btn {
   color: #FC9063;
-  border-color: #FC9063;
+  border-color: red;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;

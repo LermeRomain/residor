@@ -1,8 +1,9 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid text-center">
     <div class="container col-md-10 col-sm-12">
       <div class="card text-bg-dark">
-        <div class="geometric-shape d-none d-md-block"></div>
+        <div class="geometric-shape d-none d-md-block">
+        </div>
         <img
             src="https://book.guestready.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.0a2eba96.jpeg&w=1920&q=75"
             class="card-img" alt="..." style="object-fit: cover;">
@@ -49,7 +50,7 @@ export default {
   height: 400px;
   width: 400px;
   border-radius: 550px 8px 8px 8px;
-  background-color: rgba(246, 143, 120, 1);
+  background-color: #FC9063;
   animation: 0.5s ease-in-out 0s 1 normal none running animation-bd47v2;
   right: 20px;
   bottom: 100px;

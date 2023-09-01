@@ -3,6 +3,7 @@
     <nav class=" navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">
         <span class="residor-logo">résidor</span>
+        <p>Votre logement vaut de l’or</p>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,6 +36,7 @@
       </div>
     </nav>
   </div>
+  <Partenaires/>
   <Search/>
 <!--  <Sejour/>-->
   <Sejourtest/>
@@ -55,10 +57,12 @@ import Satisfaction from "@/components/Satisfaction";
 import Avis from "@/components/Avis";
 import Footer from "@/components/Footer";
 import Sejourtest from "@/components/Sejourtest";
+import Partenaires from "@/components/Partenaires";
 
 export default {
   name: 'App',
   components: {
+    Partenaires,
     Sejourtest,
     Footer,
     Avis,
@@ -129,6 +133,7 @@ body{
 
 p{
   font-family: poppin,cursive;
+  font-size: 1rem;
 }
 
 
