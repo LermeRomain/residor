@@ -23,7 +23,7 @@
                 <p class="font-weight-bold">{{ titres[i] }}</p>
               </div>
               <div class="d-flex align-items-start">
-                <p class="small">{{ descriptions[i] }}</p>
+                <p class="small">{{ truncateDescription(descriptions[i], 100) }}</p>
               </div>
               <div class="d-flex justify-content-between align-items-center mt-3">
                 <div class="d-flex align-items-center">
@@ -51,6 +51,16 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Sejourtest",
+  methods: {
+    truncateDescription(description, maxLength) {
+      if (description.length <= maxLength) {
+        return description;
+      } else {
+        // Tronquer la description et ajouter "..."
+        return description.slice(0, maxLength) + " ...";
+      }
+    },
+  },
   data() {
     return {
       images: [

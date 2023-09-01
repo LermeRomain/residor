@@ -36,8 +36,9 @@
       </div>
     </nav>
   </div>
-  <Partenaires/>
+  <Partenaires class="d-none d-md-block"/>
   <Search/>
+  <Valeurs/>
 <!--  <Sejour/>-->
   <Sejourtest/>
   <Type/>
@@ -58,10 +59,12 @@ import Avis from "@/components/Avis";
 import Footer from "@/components/Footer";
 import Sejourtest from "@/components/Sejourtest";
 import Partenaires from "@/components/Partenaires";
+import Valeurs from "@/components/Valeurs";
 
 export default {
   name: 'App',
   components: {
+    Valeurs,
     Partenaires,
     Sejourtest,
     Footer,

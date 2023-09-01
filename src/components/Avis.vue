@@ -138,6 +138,7 @@ h4 {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .zoom-overlay {
