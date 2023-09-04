@@ -1,20 +1,20 @@
 <template>
   <NavBar/>
-  <Aides/>
+  <QuiSommesNous/>
   <Footer/>
 </template>
 
 <script>
 
 import NavBar from "@/components/Navbar";
-import Aides from "@/components/questions/Aides";
 import Footer from "@/components/Footer";
+import QuiSommesNous from "@/components/QSN/Qui-sommes-nous";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Questions',
+  name: 'QSN',
   components: {
+    QuiSommesNous,
     Footer,
-    Aides,
     NavBar
   }
 }

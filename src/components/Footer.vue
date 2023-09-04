@@ -18,11 +18,15 @@
               <div class="col-md-3">
                 <h4>Entreprise</h4>
                 <ul class="list-unstyled">
-                  <li>À propos</li>
+                  <router-link to="/Qui-sommes-nous">
+                    <li>À propos</li>
+                  </router-link>
                   <li>Devenir hôte</li>
                   <li>Carrières</li>
                   <li>Contact</li>
-                  <li>Aide et FAQ</li>
+                  <router-link to="/Questions">
+                    <li>Aide et FAQ</li>
+                  </router-link>
                 </ul>
               </div>
               <div class="col-md-3">
@@ -43,8 +47,10 @@
           <div>
             <a href="https://www.instagram.com/residorparis/"><span
                 class="fab fa-instagram fa-3x text-white mx-3"></span></a>
-            <a href="https://www.facebook.com/profile.php?id=100095601399409"><span class="fab fa-facebook fa-3x text-white mx-3"></span></a>
-            <a href="https://www.tiktok.com/@residor2024?lang=fr"><span class="fab fa-tiktok fa-3x text-white mx-3"></span></a>
+            <a href="https://www.facebook.com/profile.php?id=100095601399409"><span
+                class="fab fa-facebook fa-3x text-white mx-3"></span></a>
+            <a href="https://www.tiktok.com/@residor2024?lang=fr"><span
+                class="fab fa-tiktok fa-3x text-white mx-3"></span></a>
           </div>
         </div>
       </div>
@@ -112,7 +118,16 @@ h4 {
   color: #FC9063;
 }
 
-li{
-  font-family: poppin,cursive;
+li {
+  font-family: poppin, cursive;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+a.router-link-exact-active {
+  background: none;
 }
 </style>
