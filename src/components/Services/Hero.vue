@@ -3,12 +3,14 @@
     <div class="container-fluid col-md-7 relative-container">
       <!-- Nuages animés derrière les titres -->
       <div class="cloud cloud-behind-title"></div>
+      <div class="cloud cloud-behind-title m-5"></div>
       <h1 class="title text-center">On s’occupe de tout et on le fait bien !</h1>
       <h2 class="subtitle text-center">Nos services de conciergerie</h2>
       <!-- Fin des nuages animés derrière les titres -->
     </div>
     <div class="container text-center">
       <!-- Nuages animés pour le contenu -->
+      <div class="cloud cloud-content"></div>
       <div class="cloud cloud-content"></div>
       <div class="row">
         <div class="col">
@@ -65,6 +67,7 @@ p {
 .cloud {
   width: 200px;
   height: 50px;
+  opacity: 25%;
   background-color: #87CEEB; /* Couleur bleue */
   border-radius: 100px;
   position: absolute;
