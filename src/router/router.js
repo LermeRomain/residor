@@ -6,6 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../pages/Home';
 import About from '../pages/Questions';
 import QSN from '../pages/QSN';
+import Services from "@/pages/Services";
 
 const routes = [
     {
@@ -19,6 +20,10 @@ const routes = [
     {
         path: '/qui-sommes-nous',
         component: QSN,
+    },
+    {
+        path: '/services',
+        component: Services,
     },
 ];
 
