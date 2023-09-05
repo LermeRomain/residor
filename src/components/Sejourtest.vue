@@ -27,16 +27,16 @@
               </div>
               <div class="d-flex justify-content-between align-items-center mt-3">
                 <div class="d-flex align-items-center">
-                  <i class="fas fa-bed"></i><span class="ms-1">2</span>
+                  <i class="fa-solid fa-bed"></i><span class="ms-1">2</span>
                 </div>
                 <div class="d-flex align-items-center">
-                  <i class="fas fa-bath"></i><span class="ms-1">1</span>
+                  <i class="fa-solid fa-bath"></i><span class="ms-1">1</span>
                 </div>
                 <div class="d-flex align-items-center">
-                  <i class="fas fa-toilet"></i><span class="ms-1">1</span>
+                  <i class="fa-solid fa-toilet"></i><span class="ms-1">1</span>
                 </div>
                 <div class="d-flex align-items-center">
-                  <i class="fas fa-car"></i><span class="ms-1">1</span>
+                  <i class="fa-solid fa-car"></i><span class="ms-1">1</span>
                 </div>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default {
         "1. Comment estimer mes revenus ?",
         "3. Je ne suis pas propriétaire : ai-je le droit de louer mon appartement ?",
         "5. Pourquoi passer par vous et pas directement sur Airbnb ?",
-        "7. Que devons-nous vérifier avant de louer notre logement ?",
+        "6. Que devons-nous vérifier avant de louer notre logement ?",
       ],
       reponse1: [
         "A l’aide d’une base de données programmée pour les Jeux Olympiques, nous sommes aujourd’hui en mesure de faire une estimation des potentiels revenus générés pendant les Jeux Olympiques en prenant en compte différents facteurs : le nombre de pièces, la localisation, l’état de l’appartement et le nombre de couchages. Une fois tous ces paramètres renseignés, vous pourrez connaître combien votre logement peut vous rapporter.",
@@ -44,7 +44,7 @@ export default {
       question2: [
         "2. Comment gérez-vous les clés de mon logement ?",
         "4. Comment être sûr que mon appartement sera loué ?",
-        "6. Combien prenez-vous de commission ?",
+        "7. Combien prenez-vous de commission ?",
       ],
       reponse2: [
         "Au début de la location, vous nous confiez un jeu de clés (idéalement entre 2 et 3 jeux). Nous prenons soin de vos clés pendant toute la durée de la location dans l’appartement. Entre chaque réservation, nous réalisons des check-in en physique, autrement dit : nous assurons nous-mêmes de la bonne distribution des clés au locataire au début de sa réservation, ainsi que de sa bonne restitution (pas de boîte à clé).",
