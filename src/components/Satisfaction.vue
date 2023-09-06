@@ -13,7 +13,7 @@
             <h1 class="title text-dark">475 000+ voyageurs satisfaits</h1>
             <p class="subtitle text-dark">Avec une grande sélection de locations <br>à court terme et long terme à travers tout Paris,
               <br>il n'est pas étonnant que nos voyageurs <br>reviennent toujours.</p>
-            <button class="btn btn-outline-success custom-btn">En savoir plus sur Residor</button>
+           <router-link to="/services"><button class="btn btn-outline-success custom-btn">En savoir plus sur Residor</button></router-link>
           </div>
         </div>
       </div>

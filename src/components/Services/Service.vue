@@ -89,6 +89,11 @@ export default {
 section{
   margin-bottom: 5rem;
 }
+
+.card{
+  border-radius: 15px;
+  border: none;
+}
 h1 {
   font-size: 2.5rem;
   margin-top: 2rem;

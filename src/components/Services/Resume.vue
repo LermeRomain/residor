@@ -7,6 +7,7 @@
     </div>
     <div class="container text-center">
       <!-- Numéros au centre -->
+      <h1>En resumé :</h1>
       <div class="row">
         <div class="col">
           <div v-for="(item, index) in items" :key="index" class="col-md-12">
@@ -58,10 +59,11 @@ section {
   z-index: -1;
 }
 
-p {
-  font-size: 2rem;
+h1 {
+  font-size: 2.5rem;
   font-family: poppin, cursive;
-  font-weight: 600;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -208,6 +210,8 @@ p {
   font-size: 1.5rem; /* Ajustez la taille de la police du texte */
   margin-bottom: 1rem;
   margin-top: 1em;
+  font-family: poppin, cursive;
+  font-weight: 300;
 }
 
 </style>
