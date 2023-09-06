@@ -7,18 +7,6 @@
     </div>
     <div class="container text-center">
       <!-- Numéros au centre -->
-      <div class="row">
-        <div class="col">
-          <div v-for="(item, index) in items" :key="index" class="col-md-12">
-            <div class="number-wrapper">
-              <div class="number-circle">
-                <div class="number">{{ item.number }}</div>
-              </div>
-              <div class="text-center">{{ item.text }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Fin des numéros au centre -->
       <!-- Nuages animés pour le contenu -->
       <div class="cloud cloud-content cloud3"></div>
@@ -32,20 +20,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Resume",
-  data() {
-    return {
-      items: [
-        {number: 1, text: "Vous nous confiez vos clés"},
-        {number: 2, text: "On gère votre annonce Airbnb pour la rendre séduisante"},
-        {number: 3, text: "On accueille les voyageurs comme à l’hôtel !"},
-        {number: 4, text: "On veille sur votre logement et vos voyageurs"},
-        {number: 5, text: "Nos partenaires font le ménage avant et après"},
-        {number: 6, text: "Vous êtes content de rentrer chez vous !"},
-        {number: 7, text: "Et vos voyageurs seront contents de revenir ;)"}
-      ],
-    };
-  },
+  name: "Convaincus",
 }
 </script>
 
@@ -54,7 +29,7 @@ section {
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: relative; /* Permet de positionner les nuages par rapport à cette section */
-  background-color: rgb(223, 229, 246);
+  background-color: white;
   z-index: -1;
 }
 
@@ -72,7 +47,7 @@ p {
 .cloud {
   height: 30px;
   opacity: 60%;
-  background-color: white; /* Couleur bleue */
+  background-color: #87CEEB; /* Couleur bleue */
   border-radius: 100px;
   position: absolute;
   top: 50%;
@@ -119,18 +94,6 @@ p {
   animation-delay: 1s; /* Délai avant le départ de l'animation */
 }
 
-.number {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.number {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
 @keyframes changeWidthLeft1 {
   0% {
     left: -200px;
@@ -173,41 +136,6 @@ p {
     right: 0;
     width: 240px;
   }
-}
-
-
-.number-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Pour centrer verticalement */
-}
-
-.number-circle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  min-width: 8rem;
-  min-height: 8rem;
-  background: rgb(255, 255, 255);
-  color: rgb(1, 79, 255);
-  box-shadow: rgba(31, 54, 107, 0.13) 0px 2px 5px 0px;
-  font-size: 3.5rem;
-}
-
-.number {
-  font-size: 3rem; /* Ajustez la taille de la police des numéros */
-  font-weight: bold;
-  color: #FC9063; /* Couleur du texte du numéro */
-  /* text-align: center; Supprimez cette ligne */
-  /* margin: 0 auto; Supprimez cette ligne */
-}
-
-.text-center{
-  font-size: 1.5rem; /* Ajustez la taille de la police du texte */
-  margin-bottom: 1rem;
-  margin-top: 1em;
 }
 
 </style>

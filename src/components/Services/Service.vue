@@ -86,12 +86,9 @@ export default {
 
 <style scoped>
 
-.card {
-  border-radius: 15px;
-  border: none;
-  padding: 1rem;
+section{
+  margin-bottom: 5rem;
 }
-
 h1 {
   font-size: 2.5rem;
   margin-top: 2rem;
