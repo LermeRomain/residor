@@ -2,6 +2,7 @@
   <NavBar/>
   <Partenaires class="d-none d-md-block"/>
   <Search/>
+  <Fanny/>
   <Valeurs/>
   <!--  <Sejour/>-->
   <Sejourtest/>
@@ -25,11 +26,13 @@ import Sejourtest from "@/components/Sejourtest";
 import Partenaires from "@/components/Partenaires";
 import Valeurs from "@/components/Valeurs";
 import NavBar from "@/components/Navbar";
+import Fanny from "@/components/Fanny";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Home',
   components: {
+    Fanny,
     NavBar,
     Valeurs,
     Partenaires,
