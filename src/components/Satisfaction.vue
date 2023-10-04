@@ -5,7 +5,7 @@
         <div class="card-body d-md-flex">
           <!-- Colonne d'image (pour les grands écrans) -->
           <div class="col-md-4">
-            <img src="https://book.guestready.com/_next/static/media/picnic.cc250cf2.svg" class="img-fluid" alt="...">
+            <img src="https://medias.paris2024.org/uploads/2022/11/phryge2.png?x-oss-process=image/resize,w_800,h_800,m_lfit/format,png" class="img-fluid" alt="...">
           </div>
 
           <!-- Colonne de texte -->
@@ -73,5 +73,9 @@ section {
 .custom-btn:hover {
   background-color: white;
   color: #FC9063;
+}
+
+img{
+  max-height: 300px;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-  <div class="sejour">
-    <div class="container-fluid col-md-10 pb-5">
-      <h1 class="title text-white">Trouvez votre séjour idéal</h1>
-      <p class="subtitle text-white">Découvrez une sélection de nos maisons les plus réservées</p>
+  <div class="container-fluid">
+    <div class="container col-md-12 pb-3">
+      <h1 class="title">Nos suggestions</h1>
+      <p class="subtitle">Découvrez une sélection de nos maisons les plus réservées</p>
     </div>
 
-    <div class="container-fluid col-md-11 ">
+    <div class="container col-md-12 ">
       <div class="row justify-content-center">
         <div v-for="logement in logements.slice(0, 4)" :key="logement.id" class="col-md-3">
 
@@ -29,11 +29,6 @@
                   <p class="font-weight-bold">{{ logement.titre }}</p>
                   <p class="small">{{ logement.description }}</p>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div v-for="icon in logement.icons" :key="icon.name" class="d-flex align-items-center">
-                    <i :class="icon.class"></i><span class="ms-1">{{ icon.number }}</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -49,7 +44,7 @@ import axios from 'axios';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Sejour',
+  name: 'Suggestions',
   setup() {
     const logements = ref([]);
     const logementPhotosMap = ref({});
@@ -74,11 +69,6 @@ export default {
           description: logement.description,
           rating: logement.rating,
           superficie: logement.superficie,
-          icons: [
-            {name: 'user', class: 'fa-solid fa-user m-1', number: logement.capacity},
-            {name: 'bed', class: 'fa-solid fa-bed m-1', number: logement.chambres},
-            {name: 'shower', class: 'fa-solid fa-shower m-1', number: logement.douche},
-          ],
         }));
 
         // Ajoutez un message de débogage pour vérifier les données du logement
@@ -136,15 +126,23 @@ export default {
   font-weight: 300;
 }
 
-.sejour {
-  background-color: #FC9063;
-  margin-bottom: 2rem;
-  padding-bottom: 3rem;
+.container-fluid {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .card {
   border: none;
   border-radius: 15px;
+}
+
+.card:hover {
+  transform: scale(1.07); /* Grossissement de 10% */
+  transition: transform 0.3s ease; /* Transition fluide */
+}
+
+.custom-card-width {
+  width: 100%;
 }
 
 .custom-card-width {

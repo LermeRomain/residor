@@ -99,11 +99,13 @@ h4 {
 
 .card {
   border: none;
+  border-radius: 15px;
 }
 
 .image-container {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .card-img {
@@ -111,7 +113,7 @@ h4 {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .zoom-overlay {
@@ -120,7 +122,7 @@ h4 {
   left: 10px;
   background-color: white;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   opacity: 1; /* Afficher le bouton en permanence */
 }
 

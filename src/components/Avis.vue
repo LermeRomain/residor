@@ -126,6 +126,7 @@ h4 {
 
 .card {
   border: none;
+  border-radius: 10px;
 }
 
 .image-container {

@@ -1,12 +1,20 @@
 <template>
-  <section class="section text-white py-5">
+  <section class="section text-white pt-5 pb-5">
     <div class="container-fluid col-md-11">
-      <div class="card">
+      <div class="card"> <!-- Ajout de la classe "mb-4" pour uniformiser les marges -->
         <div class="card-body d-md-flex">
           <div class="col-md-3">
             <a class="navbar-brand" href="#">
               <span class="residor-logo">résidor</span>
             </a>
+            <div class="d-flex align-items-center mb-3"> <!-- Ajout d'une classe pour aligner horizontalement les logos -->
+              <a href="https://www.instagram.com/residorparis/"><span
+                  class="fab fa-instagram fa-3x text-white mr-3"></span></a>
+              <a href="https://www.facebook.com/profile.php?id=100095601399409"><span
+                  class="fab fa-facebook fa-3x text-white mr-3"></span></a>
+              <a href="https://www.tiktok.com/@residor2024?lang=fr"><span
+                  class="fab fa-tiktok fa-3x text-white mr-3"></span></a>
+            </div>
             <p>Nous offrons aux voyageurs un séjour confortable et aidons les hôtes à gérer leurs propriétés dans le
               respect des standards professionnels.</p>
             <a href="mailto:hello@residor-paris.com">
@@ -23,9 +31,14 @@
                   </router-link>
                   <li>Devenir hôte</li>
                   <li>Carrières</li>
-                  <li>Contact</li>
                   <router-link to="/Questions">
                     <li>Aide et FAQ</li>
+                  </router-link>
+                  <router-link to="/Conditions">
+                    <li>Conditions d'utilisations</li>
+                  </router-link>
+                  <router-link to="/MentionsLegales">
+                    <li>Mentions Legales</li>
                   </router-link>
                 </ul>
               </div>
@@ -42,16 +55,8 @@
             </div>
           </div>
         </div>
-        <div class="card-footer text-muted d-flex justify-content-between">
-          <div class="text-white d-none d-md-block">© 2023 Altius Group. Tous droits réservés.</div>
-          <div>
-            <a href="https://www.instagram.com/residorparis/"><span
-                class="fab fa-instagram fa-3x text-white mx-3"></span></a>
-            <a href="https://www.facebook.com/profile.php?id=100095601399409"><span
-                class="fab fa-facebook fa-3x text-white mx-3"></span></a>
-            <a href="https://www.tiktok.com/@residor2024?lang=fr"><span
-                class="fab fa-tiktok fa-3x text-white mx-3"></span></a>
-          </div>
+        <div class="card-footer text-muted d-flex justify-content-end">
+          <div class="text-white">© 2023 Altius Group. Tous droits réservés.</div>
         </div>
       </div>
     </div>
@@ -70,6 +75,7 @@ export default {
 .residor-logo {
   font-family: 'Sacramento', cursive;
   font-size: 3em;
+  font-weight: 400;
   color: white;
 }
 
@@ -83,15 +89,13 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: 300;
-  opacity: 75%;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .card {
   border: none;
   background-color: #f6692c;
-  padding-top: 3rem;
   border-radius: 25px;
 }
 
@@ -116,10 +120,6 @@ h4 {
 .custom-btn:hover {
   background-color: white;
   color: #FC9063;
-}
-
-li {
-  font-family: poppin, cursive;
 }
 
 a {

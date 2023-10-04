@@ -6,22 +6,27 @@
 
 export default {
   name: 'App',
-  components: {
-
-  }
+  components: {}
 }
 </script>
 
 <style>
 
-body{
-  background-color: #f8f9fa!important;
+body {
+  background-color: #f8f9fa !important;
 }
 
-p{
-  font-family: poppin,cursive;
-  font-size: 1rem;
+p {
+  font-family: Helvetica, sans-serif;
 }
 
+.title{
+  font-family: Helvetica, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 </style>

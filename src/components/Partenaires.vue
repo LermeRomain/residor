@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 p {
-  font-family: poppin, cursive;
+  font-family: Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #f6692c;
   font-weight: 900;

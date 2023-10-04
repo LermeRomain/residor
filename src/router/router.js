@@ -7,6 +7,12 @@ import Home from '../pages/Home';
 import About from '../pages/Questions';
 import QSN from '../pages/QSN';
 import Services from "@/pages/Services";
+import LogementDetails from "@/components/Logement/LogementDetails";
+import Api from "@/components/Logement/Api";
+import LogementInfos from "@/components/Logement/LogementInfos";
+import Logements from "@/pages/Logements";
+import MentionsLegales from "@/pages/MentionsLegales";
+import Conditions from "@/pages/Conditions";
 
 const routes = [
     {
@@ -25,6 +31,37 @@ const routes = [
         path: '/services',
         component: Services,
     },
+    {
+        path: '/logements',
+        component: Logements,
+    },
+    {
+        path: '/logement/:id',
+        name: 'logement-details',
+        component: LogementDetails,
+        props: true, // Pass route parameters as props
+    },
+    {
+        path: '/logement/:id',
+        name: 'Api',
+        component: Api,
+        props: true, // Pass route parameters as props
+    },
+    {
+        path: '/logement/:id',
+        name: 'LogementInfos',
+        component: LogementInfos,
+        props: true, // Pass route parameters as props
+    },
+    {
+        path: '/mentionslegales',
+        component: MentionsLegales,
+    },
+    {
+        path: '/conditions',
+        component: Conditions,
+    },
+
 ];
 
 const router = createRouter({
